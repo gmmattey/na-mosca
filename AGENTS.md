@@ -9,15 +9,16 @@ Leia nesta ordem quando a demanda tocar o assunto:
 1. `docs/00-nome-canonico.md` — nome público.
 2. `docs/documentacao-funcional.md` — regra do jogo e comportamento.
 3. `docs/jornada-ux-ui.md` — fluxo e UX.
-4. `docs/identidade-visual.md` — direção visual.
-5. `docs/regras-design-e-copy.md` — trava anti-IA; prevalece em design/copy quando houver conflito visual antigo.
-6. `docs/brief-prototipo.md` — escopo do protótipo.
-7. `docs/arquitetura-tecnica-zero-custo.md` — arquitetura e custo.
-8. `docs/modelo-de-dados.md` e `docs/contratos-motor-jogo.md` — dados e regras autoritativas.
-9. `docs/backlog-priorizado.md` e `docs/plano-implementacao.md` — ordem de implementação.
-10. código/migrations/testes — verdade do que já está implementado; divergência com intenção deve ser explicitada, não escondida.
+4. `docs/design/design-system/` — quando presente, é a fonte visual operacional principal: tokens, componentes, guidelines, assets, UI kit e skill de design.
+5. `docs/identidade-visual.md` — direção visual e contexto de origem.
+6. `docs/regras-design-e-copy.md` — trava anti-IA; continua obrigatória mesmo com Design System.
+7. `docs/brief-prototipo.md` — escopo do protótipo.
+8. `docs/arquitetura-tecnica-zero-custo.md` — arquitetura e custo.
+9. `docs/modelo-de-dados.md` e `docs/contratos-motor-jogo.md` — dados e regras autoritativas.
+10. `docs/backlog-priorizado.md` e `docs/plano-implementacao.md` — ordem de implementação.
+11. código/migrations/testes — verdade do que já está implementado; divergência com intenção deve ser explicitada, não escondida.
 
-Regra funcional vence preferência visual. Protótipo aprovado vence improviso de UI. Nenhum agente inventa feature para preencher espaço.
+Regra funcional vence preferência visual. Quando o Design System estiver importado, ele vence improviso visual e documentos visuais antigos no que disser respeito a token, componente, medida, tipografia, motion e padrão de interface. `docs/regras-design-e-copy.md` continua podendo barrar resultado com cheiro de IA. Nenhum agente inventa feature para preencher espaço.
 
 ## 2. Squad
 
@@ -60,7 +61,19 @@ Feature central só é considerada pronta se não criar bloqueio conhecido para 
 
 ## 5. Design e copy
 
-`docs/regras-design-e-copy.md` é gate obrigatório.
+Quando `docs/design/design-system/` existir, ele é obrigatório para qualquer trabalho visual. Antes de criar CSS, componente, asset ou motion novo, consultar o que já existe no sistema.
+
+O Design System atual define, entre outras coisas:
+
+- Barlow Condensed para display/números e Barlow para corpo/interface;
+- verde-lima `#B9F34A` sobre base escura `#111315` como eixo do gameplay;
+- números como protagonista visual;
+- ausência de gradiente, glassmorphism, glow, card soup e bento grid;
+- movimento curto e funcional;
+- composição mobile-first e pouca densidade;
+- componentes próprios para palpite, timer, proximidade, score, sala, ranking e compartilhamento.
+
+`docs/regras-design-e-copy.md` continua sendo gate obrigatório contra resultado genérico ou com cheiro de IA.
 
 Não passa:
 
@@ -68,17 +81,18 @@ Não passa:
 - fonte escolhida por inércia de template/IA;
 - copy tipo “prepare-se para uma experiência incrível”;
 - texto que explica o óbvio;
-- layout que poderia ser de qualquer app trocando só o logo.
+- layout que poderia ser de qualquer app trocando só o logo;
+- recriar componente que o Design System já resolve sem justificar a necessidade.
 
-Antes do protótipo visual ser aprovado, não cristalizar UI final. Pode avançar domínio, backend, testes, conteúdo e infraestrutura reversível.
+Se houver conflito interno no próprio Design System, Giam resolve usando produto e documentação canônica; se a contradição mudar identidade/branding de forma material, vira dúvida de produto e pode parar o GOAS.
 
 ## 6. Modo GOAS
 
-Quando a demanda disser `GOAS` ou “modo goas”, seguir `.agents/workflows/GOAS.md` e a skill `executarGOAS`.
+Quando a demanda disser `GOAS`, `modo goas` ou usar o comando `/goas`, seguir `.agents/workflows/goas.md` e a skill `executarGOAS`.
 
 GOAS significa executar ponta a ponta com correção automática entre os agentes. Não significa ignorar bloqueios reais ou fingir validação.
 
-Só parar por: dúvida real de produto sem resposta nas fontes, credencial, custo, ação pública/irreversível, mudança destrutiva de dados, decisão legal/comercial ou conflito canônico.
+Só parar por: dúvida real de produto sem resposta nas fontes, credencial, custo, ação pública/irreversível, mudança destrutiva de dados, decisão legal/comercial ou conflito canônico material.
 
 ## 7. Gates mínimos
 
@@ -92,6 +106,8 @@ build
 ```
 
 Também verificar segurança/autorização e fluxo real afetado. Se algo não pôde ser executado, escrever **NÃO VERIFICADO**.
+
+Se houver UI e Design System importado, Marcelinho também deve verificar fidelidade contra tokens, componentes, guidelines, anti-patterns e UI kit aplicável.
 
 ## 8. Git e entrega
 
@@ -115,3 +131,5 @@ Se deu merda, fala. Se não testou, fala. Palavrão não transforma falha em suc
 ## 10. Skills
 
 Procedimentos vivem em `.agents/skills/`. Skill orienta execução; fonte canônica continua sendo a documentação acima.
+
+A `SKILL.md` que acompanha o Design System deve ser importada junto com o bundle visual e usada como especialização adicional de interface, sem substituir esta governança.
