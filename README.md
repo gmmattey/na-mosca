@@ -1,238 +1,177 @@
-# Na Mosca
+# Chuta Essa!
 
-> Um jogo de chute, palpite e falsa confiança pra descobrir quem sabe das coisas e quem fala merda com convicção.
+> Um jogo de estimativa, palpite e falsa confiança pra descobrir quem chega perto e quem fala um número absurdo com convicção.
+
+> **Nota técnica:** o repositório ainda se chama `na-mosca`. Esse slug é legado e não define mais o nome do produto.
 
 ## A ideia, sem reunião de alinhamento
 
-O jogo faz uma pergunta cuja resposta é um número. Todo mundo chuta. Quem chegar mais perto leva a melhor.
+O jogo faz uma pergunta cuja resposta é um número. Todo mundo chuta. Quanto mais perto da resposta correta, mais pontos.
 
-Só isso já funciona porque ninguém precisa saber a resposta exata. A graça está em pensar “não faço a menor ideia, mas 37 mil parece um número razoável” e depois descobrir que você passou longe pra cacete.
+Ninguém precisa saber a resposta exata. A graça está em pensar “não faço a menor ideia, mas 37 mil parece razoável” e depois descobrir que você quase acertou — ou foi parar em outro planeta.
 
 É trivia sem cara de prova. Mais palpite, menos enciclopédia.
 
+## Nome canônico
+
+O nome oficial do produto é **Chuta Essa!**.
+
+A exclamação faz parte da marca.
+
+Não usar `Na Mosca` em novos materiais de produto, design, marketing ou loja. Referências antigas ainda existentes em documentos históricos devem ser interpretadas como **Chuta Essa!** até serem naturalmente revisadas.
+
 ## Como joga
 
-1. A pessoa entra numa partida solo ou cria uma sala.
-2. O jogo mostra uma pergunta de estimativa.
-3. Cada jogador manda um número.
-4. Quando todo mundo responde ou o tempo acaba, o jogo revela os palpites.
-5. A resposta certa aparece.
-6. Quem chegou mais perto ganha mais pontos.
-7. Próxima pergunta.
-8. No fim, placar e zoação.
+1. O jogador entra numa partida solo ou cria uma sala.
+2. O jogo mostra uma pergunta de estimativa numérica.
+3. Cada pessoa manda um número.
+4. O palpite fica travado.
+5. Quando todos respondem ou o tempo termina, começa a revelação.
+6. A resposta correta aparece junto da distância dos palpites.
+7. Quanto mais perto, mais pontos.
+8. No fim, placar, melhores aproximações e maiores desastres.
 
-### Exemplo
+Exemplo:
 
 **“Quantos litros de água cabem numa piscina olímpica?”**
 
-Um chuta 500 mil.
-Outro manda 2 milhões.
-Tem sempre um animal que coloca 80 bilhões.
+Um chuta 500 mil. Outro manda 2 milhões. Sempre aparece alguém colocando 80 bilhões.
 
-Aí a resposta aparece e o jogo mostra visualmente quem passou perto e quem foi parar em outro planeta.
+A revelação é o coração da experiência.
 
-É nesse momento que mora boa parte da graça.
+## Modos do MVP
 
-## O diferencial não é a pergunta. É a revelação.
+### Solo
 
-Pergunta numérica existe desde que alguém resolveu perguntar “quantos feijões tem nesse pote?”. Então não adianta achar que inventamos a roda.
-
-O produto precisa ganhar na experiência:
-
-- palpites aparecendo juntos;
-- posição de cada jogador numa régua;
-- suspense antes da resposta;
-- comentários curtos e engraçados do jogo;
-- estatísticas absurdas no fim;
-- vontade imediata de mandar o resultado pra alguém.
-
-A revelação tem que dar aquela sensação de “puta merda, eu quase acertei” ou “como caralhos você achou que eram 12 milhões?”.
-
-## Pontuação
-
-A lógica precisa ser entendida sem calculadora:
-
-- quanto mais perto da resposta, mais pontos;
-- acertou na mosca, bônus bonito e direito moral de ficar insuportável;
-- respostas absurdamente longe ganham quase nada;
-- tempo pode desempatar, mas não deve transformar o jogo numa corrida de dedo.
-
-A fórmula exata vem depois dos testes. Primeiro ela precisa parecer justa, não impressionar professor de estatística.
-
-## Dois jeitos de jogar
-
-### Desafio rápido
-
-A pessoa abre, responde algumas perguntas e já recebe o resultado.
-
-Serve pra entrar sem chamar ninguém, criar hábito e alimentar desafio diário.
+10 perguntas, entrada imediata e sem login obrigatório.
 
 ### Sala com amigos
 
-Uma pessoa cria a sala, manda o link e todo mundo responde as mesmas perguntas.
+Uma pessoa cria a sala, manda link/código e todos respondem às mesmas perguntas ao mesmo tempo.
 
-Aqui entra a parte social e a zoação.
+Os palpites dos outros ficam escondidos até a revelação.
 
-Os dois modos usam a mesma mecânica, então não estamos construindo dois jogos diferentes só porque acordamos animados.
+### Depois do MVP
 
-## MVP — o que realmente precisa existir
+Desafio do Dia, estatísticas, histórico, packs de categorias e outros formatos só entram quando o loop principal estiver provado.
 
-- WebApp/PWA bom no celular.
-- Partida rápida solo.
-- Sala por link e código.
-- Entrada com apelido, sem cadastro obrigatório.
-- 2 a 8 jogadores na sala.
-- Perguntas numéricas.
-- Campo de palpite simples e confortável.
-- Cronômetro leve.
-- Revelação da resposta.
-- Visual mostrando quem ficou mais perto.
-- Pontuação por rodada.
-- Placar final.
-- Jogar novamente.
-- Compartilhar resultado e desafio pelo WhatsApp.
-- Banco inicial decente de perguntas.
-- Desafio do dia, se couber sem atrasar o lançamento.
+## Pontuação
+
+A regra canônica usa erro percentual:
+
+- acerto exato: **1.000 pontos**;
+- erro até 1%: **900**;
+- até 5%: **750**;
+- até 10%: **600**;
+- até 25%: **400**;
+- até 50%: **200**;
+- acima de 50%: **50**;
+- sem resposta: **0**.
+
+O jogador não precisa entender a fórmula. Precisa sentir que a pontuação foi justa.
+
+## A experiência que precisamos entregar
+
+O ciclo é:
+
+**leu → chutou → travou → revelou → comparou → quis outra.**
+
+A pergunta domina a tela. O palpite é gigante. O cronômetro é discreto. A revelação precisa ser visual e satisfatória.
+
+Nada de dashboard, card pra cada frase ou formulário burocrático.
+
+## Multiplataforma desde o começo
+
+Uma única base de código por jogo deve gerar:
+
+- Web/PWA;
+- Android;
+- iOS.
+
+A implementação segue a fundação compartilhada do **Auê Games**: React + TypeScript + Vite + Capacitor, com diferenças de plataforma isoladas em adapters.
+
+Web é o ponto de entrada universal e indexável. Android e iOS são cascos nativos do mesmo produto, não três implementações diferentes.
+
+## Conteúdo
+
+O conteúdo é combustível.
+
+Pergunta boa:
+
+- tem resposta verificável;
+- deixa a unidade explícita;
+- permite estimativa;
+- gera curiosidade na revelação;
+- não parece prova escolar;
+- usa data de referência quando o número pode mudar.
+
+Pergunta boa faz a pessoa pensar:
+
+> “Caralho, não faço ideia… mas deve ser mais ou menos isso.”
+
+## Design
+
+A identidade nasce de:
+
+- número;
+- aproximação;
+- precisão;
+- alvo abstrato;
+- escala;
+- marcador;
+- distância.
+
+O design não pode parecer template gerado por IA. A regra específica está em `docs/regras-design-e-copy.md`.
+
+A direção tipográfica atual é **Barlow Condensed** para impacto/números e **Barlow** para interface, sujeita a validação no protótipo — nunca por moda ou conveniência.
+
+## Distribuição
+
+Canais planejados a partir da mesma base:
+
+- Web/PWA em produção;
+- Google Play;
+- Apple App Store;
+- itch.io;
+- CrazyGames;
+- Microsoft Store via PWA;
+- outros canais depois de provar encaixe.
+
+## Monetização
+
+O jogo principal é gratuito.
+
+Publicidade só entra em pausas naturais, nunca durante uma pergunta ativa.
+
+No futuro, pago pode incluir remoção de anúncios, packs, estatísticas, histórico ou personalizações — nunca vantagem competitiva.
 
 ## O que NÃO entra agora
 
-Pra não transformar um jogo de chutar número numa plataforma da NASA:
-
-- RPG de conhecimento;
-- avatar 3D;
-- mercado de skins no lançamento;
+- poderes;
+- moedas virtuais;
 - chat;
-- torneio de 64 pessoas;
-- sistema complexo de ligas;
-- cem modos diferentes;
-- pergunta criada por IA em tempo real sem revisão;
-- app nativo antes do WebApp provar alguma coisa;
-- matéria escolar com cara de cursinho.
+- clãs;
+- avatar 3D;
+- ranking mundial complexo;
+- IA gerando perguntas sem revisão;
+- features só para deixar o produto “mais completo”.
 
-Se a diversão não estiver no palpite e na revelação, nenhuma dessas firulas salva.
+Se a pergunta e a revelação não forem gostosas, nenhuma firula salva.
 
-## Categorias iniciais
+## Documentação principal
 
-A mistura precisa ser boa justamente pra ninguém dominar tudo:
+Ler nesta ordem:
 
-- mundo;
-- Brasil;
-- dinheiro e preços;
-- comida;
-- corpo humano;
-- animais;
-- tecnologia;
-- esporte;
-- cinema e música;
-- internet;
-- história;
-- coisas absurdas do cotidiano.
-
-E a regra editorial é simples: pergunta curiosa ganha de pergunta acadêmica.
-
-**Boa:** “Quantos nuggets o McDonald’s vende por segundo no mundo?”
-
-**Chata pra cacete:** “Em que ano foi promulgada determinada convenção internacional?”
-
-Esse não é o Show do Milhão do cartório.
-
-## Conteúdo é combustível
-
-Aqui tem uma diferença importante em relação ao Quem Mente?: o Na Mosca depende bastante de um banco bom de perguntas.
-
-Cada pergunta precisa ter:
-
-- texto claro;
-- resposta numérica verificável;
-- unidade correta;
-- fonte de referência guardada internamente;
-- contexto curto pra revelação;
-- categoria;
-- nível aproximado de dificuldade;
-- data de validade quando a resposta puder mudar.
-
-Pergunta com número errado mata a confiança do jogo rapidinho. Então conteúdo pode ser engraçado; dado inventado, não.
-
-## Viralização
-
-O resultado precisa render compartilhamento sozinho.
-
-Exemplos:
-
-- **“Fiquei a 2 km da resposta. Na Mosca.”**
-- **“Renan errou por 14 milhões e ainda estava confiante.”**
-- **“Você chega mais perto que eu?”**
-- **“1 em 5.342 jogadores acertou essa na mosca.”**
-
-O link abre exatamente o desafio ou uma nova partida com aquela pergunta.
-
-O ciclo bom é: **vi uma pergunta curiosa → chutei → resultado me surpreendeu → mandei pra alguém → essa pessoa também chutou.**
-
-## Como ganhar dinheiro sem estragar o jogo
-
-### Grátis
-
-- partidas normais;
-- desafio diário;
-- categorias básicas;
-- salas com amigos;
-- anúncios leves entre partidas ou blocos, nunca tapando a resposta no meio da graça.
-
-### Pago, se houver público
-
-- remover anúncios;
-- categorias especiais;
-- packs temáticos;
-- salas personalizadas;
-- estatísticas avançadas;
-- histórico maior;
-- desafios privados;
-- eventualmente modo festa com mais jogadores.
-
-Também dá pra testar patrocínio de categoria ou pergunta no futuro, desde que não vire outdoor com botão de jogar escondido no canto.
-
-## Retenção
-
-Esse aqui tem mais espaço pra hábito que o Quem Mente?.
-
-Dá pra trazer a pessoa de volta com:
-
-- desafio do dia;
-- sequência de dias;
-- melhor pontuação semanal;
-- pergunta rara;
-- estatísticas pessoais;
-- duelo assíncrono enviado por link.
-
-Mas primeiro o básico precisa funcionar. Streak em jogo sem graça só mede quantos dias a pessoa demorou pra desistir.
-
-## O que precisamos provar
-
-1. A pergunta desperta curiosidade antes da resposta?
-2. A revelação é divertida mesmo jogando sozinho?
-3. Com amigos, o resultado gera zoação?
-4. A pessoa topa responder “só mais uma”?
-5. O desafio compartilhado traz outro jogador?
-6. Conseguimos produzir perguntas boas sem virar emprego de pesquisador em tempo integral?
-
-Esse último ponto importa pra caralho. Se cada pergunta levar meia hora pra entrar no jogo, a operação fica cara e o catálogo morre de fome.
-
-## A cara do jogo
-
-Limpo e rápido, mas com personalidade.
-
-A pergunta manda na tela. O número que a pessoa está chutando precisa ser gigante. A revelação precisa ser visual e gostosa de assistir.
-
-Nada de dez cards, quatro menus e um gráfico que parece relatório trimestral.
-
-Entrou → leu → chutou → descobriu.
-
-Esse é o ritmo.
+1. `docs/00-nome-canonico.md`
+2. `docs/documentacao-funcional.md`
+3. `docs/jornada-ux-ui.md`
+4. `docs/identidade-visual.md`
+5. `docs/regras-design-e-copy.md`
+6. `docs/brief-prototipo.md`
+7. arquitetura, dados, conteúdo, monetização e handoff conforme a fase.
 
 ## A régua
 
-O **Na Mosca** merece continuar se uma pessoa abrir por curiosidade, jogar cinco perguntas sem perceber e mandar pelo menos uma delas pra alguém.
+**Chuta Essa!** merece continuar se alguém abrir por curiosidade, jogar várias perguntas sem perceber e mandar pelo menos um resultado pra outra pessoa.
 
-Se em grupo começar aquela discussão de “eu falei que era mais ou menos isso”, melhor ainda.
-
-Aí temos uma coisa simples, barata de entender e com espaço real pra virar hábito.
+Se em grupo começar aquele “eu falei que era por aí”, melhor ainda.
