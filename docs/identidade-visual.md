@@ -1,85 +1,107 @@
-# Na Mosca — identidade visual
+# Chuta Essa! — identidade visual
 
-> Aqui a graça é mirar, chutar e descobrir o quão perto você chegou. A identidade precisa parecer precisa sem ser séria, competitiva sem virar e-sport genérico e curiosa sem cara de cursinho.
+> A marca precisa parecer um convite para arriscar um número: rápida, precisa, provocadora e divertida. Nada de cursinho, dashboard ou template de IA.
 
-## 1. Personalidade visual
+## 1. Personalidade
 
-O **Na Mosca** precisa parecer:
+**Chuta Essa!** é:
 
 - rápido;
 - curioso;
 - confiante;
 - competitivo;
 - limpo;
-- divertido sem palhaçada visual.
+- provocador sem ser agressivo;
+- divertido sem virar infantil.
 
-A sensação é de alguém dizendo: **“eu acho que sei… manda 42 mil.”**
+A sensação é alguém jogando uma pergunta na mesa e dizendo:
 
-## 2. Ideia central da marca
+> “Chuta essa.”
 
-A marca gira em torno de **aproximação**.
+## 2. Ideia central
 
-Não quero uma mosca literal como símbolo principal. Pode existir como easter egg, mas desenhar um inseto gigante só porque o nome é Na Mosca seria a solução mais preguiçosa possível.
+A linguagem visual nasce de **estimativa + proximidade + comparação**.
 
-A direção preferida é uma **mira simples com um ponto levemente fora do centro**.
+Elementos naturais:
 
-Isso traduz o jogo inteiro: não precisa acertar exatamente; precisa chegar perto.
+- alvo abstrato;
+- ponto;
+- marcador;
+- eixo;
+- régua;
+- distância;
+- escala;
+- números grandes;
+- aproximação.
 
-### Símbolo sugerido
+Não usar mosca literal como símbolo. O antigo working title morreu; a identidade não carrega o cadáver junto.
 
-Um alvo minimalista com:
+## 3. Marca e símbolo
 
-- dois ou três anéis;
-- ponto central;
-- um segundo ponto de palpite;
-- ou uma pequena quebra no anel formando discretamente a letra **N**.
+Direção preferida:
 
-Precisa funcionar em favicon, avatar, splash e card compartilhável.
+- símbolo simples de alvo/proximidade;
+- dois pontos quase coincidentes;
+- marcador chegando perto do centro;
+- forma que sugira movimento de “chute” até um alvo;
+- possibilidade de integrar `!` como elemento gráfico sem transformar tudo em exclamação.
 
-## 3. Wordmark
+Precisa funcionar em:
 
-**Na Mosca** deve ser curto, firme e muito legível.
+- favicon;
+- ícone de app;
+- splash;
+- avatar;
+- card compartilhável;
+- loja.
+
+Nada de símbolo que dependa de legenda para ser entendido.
+
+## 4. Wordmark
+
+Usar **Chuta Essa!** exatamente assim.
+
+A exclamação faz parte da marca e pode virar elemento de ritmo, marcador ou impacto.
 
 Direção:
 
-- letras pesadas;
-- largura compacta;
-- “Mosca” pode receber pequeno deslocamento/ponto de mira;
-- nada de fonte sci-fi de campeonato gamer.
+- firme;
+- compacta;
+- números e palavra precisam conviver bem;
+- sem fonte gamer sci-fi;
+- sem cara de startup SaaS.
 
-A marca tem energia de jogo casual competitivo, não de equipe de Counter-Strike patrocinada por energético.
+## 5. Paleta inicial
 
-## 4. Paleta
-
-### Cor principal — verde-lima elétrico
+### Verde-lima elétrico
 
 `#B9F34A`
 
-É chamativo, diferente e funciona muito bem como cor de acerto/aproximação.
+Marca, acerto, proximidade alta e CTA principal.
 
-### Fundo principal
+### Fundo escuro
 
 `#111315`
 
-Escuro neutro para destacar número, pergunta e régua.
+Base principal da experiência de jogo.
 
 ### Azul precisão
 
 `#53A7FF`
 
-Apoio para informação, multiplayer e elementos de comparação.
+Informação, comparação e apoio.
 
-### Laranja longe pra caralho
+### Laranja distância
 
 `#FF8A3D`
 
-Para erro grande, pior palpite e humor na revelação.
+Palpite muito distante, desastre e humor de revelação.
 
-### Fundo claro
+### Claro
 
 `#F5F6F1`
 
-Para home, conteúdo, telas leves e cards sociais.
+Home, conteúdo institucional e peças sociais quando a composição pedir.
 
 ### Texto claro
 
@@ -89,320 +111,209 @@ Para home, conteúdo, telas leves e cards sociais.
 
 `#1C1F21`
 
-## 5. Uso das cores
-
-- verde-lima: marca, CTA principal, “Na Mosca”, proximidade boa;
-- azul: informação e apoio;
-- laranja: palpite distante, desastre, provocação;
-- escuro: experiência principal de jogo;
-- claro: entradas, resultados sociais e áreas de conteúdo.
-
-A tela de revelação pode usar a própria distância do palpite para mudar o destaque.
-
-Quanto mais perto, mais verde.
-
-Quanto mais longe, mais laranja.
-
-Sem arco-íris automático em toda pergunta.
+A paleta é ponto de partida do protótipo, não prisão. Mudanças precisam preservar contraste e personalidade.
 
 ## 6. Tipografia
 
-### Títulos e números
+A direção preferida é:
 
-**Space Grotesk** em pesos fortes.
+- **Barlow Condensed** — títulos, números, placares e momentos de impacto;
+- **Barlow** — perguntas, botões, interface e apoio.
 
-Tem personalidade geométrica e funciona muito bem para número gigante sem virar fonte técnica demais.
+Motivo: números longos ganham força e compactação, com energia de placar/medição sem parecer calculadora ou e-sport genérico.
 
-### Interface e texto
+Antes de aprovar, testar:
 
-**Manrope**.
+- `8` x `0`;
+- `1` x `7`;
+- `1.000.000` em 360 px;
+- perguntas longas;
+- unidade junto de número gigante;
+- ranking com alinhamento tabular.
 
-Legível, limpa e familiar.
+Não trocar para Inter, Manrope, Space Grotesk, Poppins, DM Sans ou Sora só porque já estão à mão.
 
-### Regra importante
+## 7. Hierarquia
 
-O **número do palpite** é um dos protagonistas do jogo.
+Cada tela tem um protagonista.
 
-Ele pode ser muito maior que praticamente qualquer outro texto da interface.
+### Pergunta
 
-Se a pessoa digita “2.500.000” e isso aparece num campinho pequeno de formulário, fizemos merda.
+A pergunta manda.
 
-## 7. Formas
+### Palpite
 
-A geometria vem da mira:
+O número manda.
+
+### Revelação
+
+A comparação manda.
+
+### Resultado
+
+A história da partida manda.
+
+Não criar um card para cada uma dessas coisas dentro da mesma tela.
+
+## 8. Formas
+
+Preferir formas que venham da mecânica:
 
 - círculos;
 - anéis;
 - linhas;
-- pontos;
 - escalas;
-- réguas horizontais.
+- ticks;
+- pontos;
+- marcadores;
+- trajetórias.
 
-Cards existem apenas quando organizam informação. Não precisamos colocar toda frase dentro de uma caixa arredondada.
+Cantos arredondados podem existir, mas não são identidade.
 
-## 8. Ícones
+## 9. Movimento
 
-Ícones simples e lineares/grossos.
+Movimento faz parte da recompensa.
 
-Principais:
+### Envio
 
-- jogar;
-- sala;
-- copiar;
-- compartilhar;
-- cronômetro;
-- categoria;
-- ranking;
-- precisão;
-- histórico;
-- configurações.
-
-O ícone de precisão/alvo pode ser parte recorrente da identidade.
-
-## 9. Avatar dos jogadores
-
-Mesmo princípio de simplicidade:
-
-- círculo com inicial;
-- cor de apoio;
-- pequeno marcador próprio na régua de resultados.
-
-No multiplayer, cada jogador precisa ser reconhecido rapidamente sem transformar a tela numa parada LGBT involuntária de 18 cores berrando ao mesmo tempo.
-
-Usar cores acessíveis e marcadores/formas diferentes quando necessário.
-
-## 10. Movimento
-
-Aqui o movimento é parte do prazer da resposta.
-
-### Envio do palpite
-
-Número confirma com pequeno impacto/encaixe.
+Palpite encaixa/trava com impacto curto.
 
 ### Revelação
 
-A resposta correta não aparece seca.
+- escala aparece;
+- palpite entra;
+- resposta correta chega por último;
+- distância fica visualmente evidente;
+- pontos entram depois.
 
-Uma régua/linha entra ou se expande e os palpites são posicionados nela.
+### Acerto exato
 
-O ponto da resposta correta surge por último.
+Não usar mais `NA MOSCA!` como nome de estado de marca.
 
-### Na Mosca
+O estado canônico passa a ser:
 
-Se acertar exatamente:
+**CRAVOU!**
 
-- ponto entra no centro;
-- anel faz um pulso rápido;
-- texto **NA MOSCA!** aparece com impacto;
-- pequena celebração.
+Direção visual:
 
-Tem que dar vontade de printar.
+- marcador encaixa;
+- anel pulsa;
+- `CRAVOU!` aparece com impacto;
+- celebração curta.
 
-### Palpite horroroso
+Outras alternativas de copy podem ser testadas no protótipo, mas a marca não depende do nome antigo.
 
-O marcador pode continuar andando até quase sair da área visível ou a escala pode se ajustar de forma engraçada.
+## 10. Tom da interface
 
-Humor visual, sem humilhar gratuitamente.
+Curto, falado e situacional.
 
-## 11. Som
+Boas direções:
 
-Opcional.
-
-Pode existir:
-
-- confirmação de palpite;
-- pequeno tic final do cronômetro;
-- som de encaixe quando a resposta aparece;
-- “hit” especial para Na Mosca;
-- efeito curto de desastre para erro absurdo.
-
-Tudo curto. Ninguém quer um jingle toda vez que responde uma pergunta.
-
-## 12. Ilustração
-
-Pouca.
-
-A identidade pode usar:
-
-- alvos;
-- marcadores;
-- linhas de escala;
-- setas;
-- números gigantes;
-- pequenos elementos absurdos relacionados às perguntas.
-
-Exemplo: pergunta sobre girafas pode ter uma silhueta pequena na revelação, mas não precisamos ilustrar toda pergunta como livro didático.
-
-## 13. Tom da interface
-
-Curto, confiante e provocador.
-
-Boas frases:
-
+- “Chuta essa.”
 - “Manda teu chute.”
-- “Tem certeza? Agora já foi.”
-- “Quase, porra.”
+- “Agora já foi.”
+- “Porra. Quase.”
+- “Errou por 0,8%.”
 - “Você foi parar em outro planeta.”
-- “Isso foi assustadoramente perto.”
-- “NA MOSCA!”
+- “CRAVOU!”
+- “Mais uma?”
 
-Evitar transformar cada feedback em piada. Se tudo tenta ser engraçado, nada é engraçado.
+A graça vem do resultado. Não colocar piada em toda linha.
 
-## 14. Home
-
-Precisa passar o jogo em cinco segundos.
-
-Marca no topo.
-
-Pergunta curiosa ou mini demonstração pode aparecer como elemento vivo.
-
-CTAs:
-
-- **Jogar agora**;
-- **Criar sala**;
-- **Entrar em sala**.
-
-O solo deve ser o caminho mais rápido. Um toque e estamos jogando.
-
-## 15. Tela de pergunta
+## 11. Tela de pergunta
 
 Hierarquia:
 
-1. categoria pequena;
+1. categoria discreta;
 2. pergunta grande;
-3. campo/número de palpite gigante;
-4. unidade;
+3. número/palpite gigante;
+4. unidade impossível de ignorar;
 5. cronômetro discreto;
 6. CTA **Chutar**.
 
-Nada mais precisa disputar atenção.
+A tela inteira é a composição. Não empilhar três cards para organizar isso.
 
-## 16. Entrada numérica
+## 12. Revelação
 
-O número deve reagir conforme é digitado.
+É a tela mais importante.
 
-Pode usar:
-
-- separador de milhar automático;
-- tamanho responsivo;
-- unidade sempre fixa e clara;
-- atalhos opcionais como mil/milhão apenas se testes mostrarem necessidade.
-
-No primeiro MVP, menos botão é melhor.
-
-## 17. Revelação — a tela mais importante
-
-A resposta correta aparece em destaque, mas junto da comparação.
-
-Elementos:
+Precisa mostrar:
 
 - resposta correta;
 - palpite;
 - erro percentual;
 - pontos;
-- régua visual;
-- posição no multiplayer;
+- posição;
+- régua/target;
 - curiosidade curta.
 
-No multiplayer, os marcadores dos jogadores entram juntos e a resposta correta chega depois.
+No multiplayer, os marcadores entram antes da resposta correta.
 
-É o momento “puta merda”. Tem que parecer um acontecimento.
+O momento precisa dar vontade de olhar, printar ou mandar pra alguém.
 
-## 18. Ranking
+## 13. Compartilhamento
 
-Ranking deve ser curto e visual.
-
-Mostrar:
-
-- posição;
-- apelido;
-- pontos;
-- pequenas variações após a rodada.
-
-Não transformar em tabela do Brasileirão com 15 colunas.
-
-## 19. Cards compartilháveis
-
-Essenciais para viralização.
+Cards sociais devem funcionar fora do jogo.
 
 Exemplos:
 
-**“A resposta era 38. Eu chutei 39.”**
+- “A resposta era 38. Eu chutei 39.”
+- “Errei por 0,8%. Chuta essa.”
+- “O Pedro chutou 8 milhões. A resposta era 42 mil.”
 
-**“Errei por 0,8%. Você chega mais perto?”**
+Número grande, marca clara e pouca informação.
 
-**“O Pedro chutou 8 milhões. A resposta era 42 mil.”**
+## 14. Anti-IA visual
 
-Visual:
+Proibido como solução automática:
 
-- fundo escuro ou claro forte;
-- pergunta resumida;
-- número enorme;
-- marca;
-- comparação simples;
-- link/CTA.
+- bento grid;
+- glassmorphism;
+- degradê roxo/azul;
+- glow neon decorativo;
+- cards dentro de cards;
+- ícones em bolinhas coloridas;
+- hero SaaS;
+- ilustração genérica gerada por IA;
+- fonte escolhida por tendência.
 
-Tem que funcionar como conteúdo sozinho no WhatsApp e redes.
+A regra detalhada está em `docs/regras-design-e-copy.md`.
 
-## 20. Estados de precisão
+## 15. Acessibilidade
 
-O jogo pode usar quatro estados visuais simples:
-
-### Na Mosca
-
-Verde-lima forte + pulso.
-
-### Muito perto
-
-Verde-lima mais contido.
-
-### Razoável
-
-Azul.
-
-### Foi longe
-
-Laranja.
-
-Sem vermelho de “você errou”. O jogo não é prova. Errar faz parte da graça.
-
-## 21. Acessibilidade
-
-Nunca depender só de cor para dizer quem chegou perto.
+Não depender só de cor para proximidade ou ranking.
 
 Usar também:
 
+- posição;
 - texto;
 - porcentagem;
-- posição;
-- ícone/marcador;
-- formas diferentes quando necessário.
+- forma;
+- marcador;
+- ícone quando necessário.
 
-Contraste forte no fundo escuro.
+Respeitar redução de movimento e safe areas.
 
-Número digitado e unidade precisam continuar legíveis em telas pequenas.
+## 16. O que jamais fazer
 
-## 22. O que jamais fazer
-
-- mosca cartunesca gigante como logo principal;
-- estética de app educacional infantil;
-- tabela cheia de estatística durante a rodada;
+- mosca como mascote automático;
+- estética escolar infantil;
+- dashboard de estatística durante rodada;
 - fonte digital de relógio em tudo;
-- neon gamer azul/roxo;
-- dez gráficos para explicar um palpite;
-- animação longa antes de cada resposta;
-- placar ocupando metade da tela enquanto a pessoa está tentando pensar.
+- neon gamer;
+- dez gráficos para explicar um chute;
+- animação longa antes da resposta;
+- card para cada frase;
+- copy publicitária genérica.
 
-## 23. Resumo da identidade
+## 17. Resumo
 
-**Na Mosca** é escuro, limpo, geométrico, energético e centrado em número.
+**Chuta Essa!** é número, aproximação, coragem de chutar e prazer da revelação.
 
-A marca diz:
+A marca pergunta:
 
-> “Chega o mais perto que puder.”
+> “Chuta essa.”
 
 A experiência responde:
 
 > “Caralho. Olha onde você foi parar.”
-
-Se parecer aplicativo de quiz escolar, volta tudo. Esse jogo é sobre coragem de chutar, não sobre levantar a mão porque estudou a matéria.
