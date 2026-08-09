@@ -23,7 +23,8 @@ Se um recurso exigir upgrade antes de o jogo provar que dá retorno, o recurso p
 ### Backend, banco e realtime
 
 - Supabase Free.
-- mesmo projeto Supabase compartilhado com os demais jogos da linha, usando prefixos próprios de tabela.
+- o projeto Supabase hoje identificado como **20T será reaproveitado como projeto compartilhado dos jogos**.
+- não criar um projeto Supabase novo para o Na Mosca.
 - Postgres como banco.
 - Supabase Auth com login anônimo.
 - Supabase Realtime apenas no multiplayer.
@@ -53,13 +54,17 @@ A aplicação chama o Supabase diretamente quando precisa de banco, autenticaç�
 
 Pages Functions/Workers ficam fora do caminho principal do MVP. Se depois aparecer um caso que realmente precise deles, usamos. Não vamos gastar quota só porque existe.
 
-## 4. Por que Supabase compartilhado
+## 4. Supabase compartilhado — o 20T vira a base dos jogos
 
 O Free tem limite de projetos ativos. Criar um Supabase para cada jogo é uma ótima forma de acabar pagando por bancos quase vazios.
 
-A proposta é um projeto lógico de jogos, por exemplo:
+Por isso, **o projeto Supabase 20T deixa de ser tratado como projeto isolado e passa a ser a base compartilhada dos jogos**.
+
+Nome lógico desejado para essa função:
 
 `buildea-games`
+
+Isso não exige criar outro projeto. A intenção é reaproveitar o projeto Supabase já existente do 20T e, quando entrarmos em desenvolvimento, vincular os repositórios dos jogos a ele.
 
 Dentro dele, tudo do Na Mosca usa prefixo `nm_`.
 
@@ -74,6 +79,25 @@ Exemplos:
 O Quem Mente? usa `qm_` e não mete a mão nas tabelas do Na Mosca.
 
 Compartilhar a infraestrutura não significa misturar regra de jogo.
+
+### Antes de mexer no 20T
+
+Nada de apagar schema no susto.
+
+Antes da substituição efetiva, deve ser feita uma auditoria única no projeto Supabase 20T para identificar:
+
+- tabelas existentes;
+- funções/RPCs;
+- policies RLS;
+- Edge Functions, se houver;
+- buckets de Storage;
+- usuários Auth;
+- secrets e integrações;
+- qualquer dependência externa ainda apontando para o projeto.
+
+O que estiver comprovadamente sem uso pode ser removido por migration. O que ainda tiver dependência precisa ser tratado antes.
+
+A regra é simples: **reaproveitar o projeto, não sair demolindo o prédio antes de olhar se tem alguém lá dentro**.
 
 ## 5. Identidade do jogador
 
@@ -309,11 +333,15 @@ PR/branch pode gerar preview quando for útil.
 
 Banco deve usar migrations versionadas no repositório.
 
+O vínculo via `supabase link` fica para quando o desenvolvimento começar; até lá a documentação define o destino, mas não inventa acoplamento local antes da hora.
+
 Mudança de regra de pontuação ou schema sem migration é pedir para o futuro Luiz mandar o presente Luiz tomar no cu.
 
 ## 19. Regra final
 
 O Na Mosca precisa conseguir nascer, receber usuário, manter sala e medir resultado sem cartão de crédito adicional.
+
+O projeto Supabase a ser usado é o **20T reaproveitado como base compartilhada dos jogos**, e não um projeto novo.
 
 Quando começar a gerar receita ou o uso justificar claramente um upgrade, reavaliamos.
 
