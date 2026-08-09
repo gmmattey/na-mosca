@@ -1,415 +1,289 @@
-# Na Mosca — brief do protótipo
+# Chuta Essa! — brief do protótipo
 
-> Objetivo: desenhar um protótipo mobile-first que faça a pessoa bater o olho, entender o jogo e querer mandar um chute em poucos segundos. Sem cara de prova, sem dashboard e sem transformar número em formulário burocrático.
+> Objetivo: provar que ler uma pergunta, mandar um número e ver a revelação já é divertido. Mobile-first, sem cara de prova, dashboard ou template de IA.
 
-## O que prototipar
+## 1. Fonte da verdade
 
-Precisamos provar o loop principal e o multiplayer.
+Antes de desenhar, ler nesta ordem:
 
-### Telas obrigatórias
+1. `docs/00-nome-canonico.md`
+2. `docs/documentacao-funcional.md`
+3. `docs/jornada-ux-ui.md`
+4. `docs/identidade-visual.md`
+5. `docs/regras-design-e-copy.md`
 
-1. Home
-2. Partida solo — introdução mínima
-3. Pergunta
-4. Palpite digitado
-5. Palpite confirmado / esperando
-6. Revelação solo
-7. Resultado parcial solo
-8. Resultado final solo
-9. Criar sala
-10. Entrar em sala
-11. Sala de espera
-12. Configuração da sala
-13. Pergunta multiplayer
-14. Espera pelos outros palpites
-15. Revelação multiplayer
-16. Ranking parcial
-17. Resultado final multiplayer
-18. Card de compartilhamento
-19. Reconexão
-20. Erro de sala/código
+Se houver conflito visual, `regras-design-e-copy.md` prevalece.
 
-Boa parte disso é estado da mesma estrutura. Não inventar vinte layouts só porque a lista tem vinte itens.
+## 2. Primeira prioridade
 
-## Jornada que precisa estar clicável
+Prototipar primeiro a jornada solo inteira:
 
-### Solo
+**Home → Pergunta → Palpite → Confirmação → Revelação → Próxima → Resultado final → Compartilhar/Jogar de novo.**
 
-**Home → Jogar agora → Pergunta → Chute → Revelação → Próxima → Resultado final → Compartilhar/Jogar de novo.**
+Só depois fechar multiplayer.
 
-### Multiplayer
+## 3. O que o protótipo precisa provar
 
-**Home → Criar sala → Sala → Iniciar → Pergunta → Palpites secretos → Revelação → Ranking → Próxima → Resultado final → Revanche.**
+- conceito entendido sem tutorial longo;
+- solo começa praticamente em um toque;
+- digitar um número é gostoso;
+- unidade nunca gera dúvida;
+- cronômetro não rouba atenção;
+- revelação é melhor do que simplesmente mostrar a resposta;
+- pontuação parece justa;
+- a pessoa quer outra pergunta;
+- resultado parece compartilhável.
 
-Também:
+## 4. Direção visual
 
-**Home → Entrar em sala → Código/apelido → Sala.**
+Usar:
 
-## O que o protótipo precisa provar
+- fundo escuro como base de gameplay;
+- verde-lima `#B9F34A` como energia principal;
+- azul `#53A7FF` para apoio/comparação;
+- laranja `#FF8A3D` para distância e desastre;
+- **Barlow Condensed** para números/títulos;
+- **Barlow** para interface;
+- alvo abstrato, escala, pontos, marcadores e régua;
+- número como protagonista.
 
-- a pessoa entende sem tutorial;
-- começar solo leva praticamente um toque;
-- digitar um número é gostoso e claro;
-- a unidade nunca gera dúvida;
-- a revelação é melhor que simplesmente mostrar a resposta;
-- no multiplayer, dá pra entender quem ficou mais perto em segundos;
-- a pessoa sente vontade de ver a próxima;
-- compartilhar uma pergunta/resultado faz sentido.
+Não usar mosca literal.
 
-## Direção visual
+## 5. Regra anti-IA
 
-Usar `docs/identidade-visual.md` como fonte da verdade.
+Não entregar:
 
-Resumo:
+- card para cada informação;
+- bento grid;
+- glassmorphism;
+- degradê roxo/azul;
+- glow neon gratuito;
+- hero de SaaS;
+- Inter/Manrope/Space Grotesk por inércia;
+- copy do tipo “prepare-se para uma experiência incrível”.
 
-- fundo escuro;
-- verde-lima como cor principal;
-- azul para apoio/informação;
-- laranja para palpite muito distante;
-- Space Grotesk em títulos e números;
-- Manrope na interface;
-- círculos, alvos, marcadores, linhas e réguas;
-- número é protagonista.
+Espaço vazio é ferramenta. Não preencher por ansiedade.
 
-## Mobile primeiro
+## 6. Mobile primeiro
 
-Artboard principal de referência: **390 × 844 px**.
+Artboard de referência: **390 × 844 px**.
 
 Precisa funcionar bem a partir de 360 px.
 
-CTA principal perto do polegar.
+CTA principal alcançável com polegar.
 
-Teclado numérico não pode esconder pergunta, unidade ou botão de confirmar.
+Teclado numérico não pode esconder pergunta, unidade ou confirmação.
 
-## Home
+Safe areas de Android/iOS devem ser consideradas desde o protótipo.
 
-A pessoa precisa entender o conceito sem ler manifesto.
+## 7. Home
 
-Marca grande.
+A pessoa precisa entender o conceito em poucos segundos.
 
-Frase curta:
+Marca: **Chuta Essa!**
 
-**“Quanto você acha que é?”**
-
-CTAs:
+CTA principal:
 
 **Jogar agora**
 
-**Criar sala**
+Secundários:
 
-**Entrar em sala**
+- **Criar sala**
+- **Entrar em sala**
 
-Pode existir uma mini pergunta viva na própria home para mostrar a brincadeira.
+Pode existir uma pergunta real como demonstração viva.
 
-Exemplo:
+Nada de hero publicitário com três cards de benefício.
 
-**“Quantos litros cabem numa piscina olímpica?”**
-
-Um número pode animar abaixo como demonstração, sem exigir resposta real.
-
-## Pergunta
-
-É a tela principal do jogo.
+## 8. Pergunta
 
 Hierarquia:
 
 1. categoria pequena;
 2. pergunta grande;
-3. espaço para o número;
+3. palpite gigante;
 4. unidade;
 5. cronômetro discreto;
-6. CTA.
+6. CTA **Chutar**.
 
-Exemplo:
+Exemplo real de composição:
 
 **Quantos metros de altura tem o Cristo Redentor contando o pedestal?**
 
-**[ 38 ] metros**
+**38**  
+metros
 
-CTA:
+## 9. Palpite
 
-**Chutar**
+O número reage conforme a pessoa digita.
 
-## Entrada do palpite
+Separadores aparecem automaticamente.
 
-O número precisa crescer conforme é digitado.
+Não usar label burocrática como “Insira sua resposta numérica”.
 
-Separadores devem aparecer automaticamente.
+A própria pergunta já explicou o que fazer.
 
-Exemplo:
+## 10. Confirmação
 
-`2500000` vira visualmente **2.500.000**.
+Depois do chute:
 
-A unidade fica parada ao lado ou abaixo.
+> **2.500.000 litros. Agora já foi.**
 
-Não colocar label “Insira sua resposta numérica”. A pergunta já explica a porra toda.
+No solo, transição curta.
 
-## Confirmação
+No multiplayer:
 
-Depois de chutar:
+> **5 de 7 já chutaram.**
 
-**“2.500.000 litros. Agora já foi.”**
+Nunca mostrar os números dos outros antes da revelação.
 
-No solo, transição curta para revelação.
+## 11. Revelação — tela principal
 
-No multiplayer, entra estado de espera:
+Sequência sugerida:
 
-**“5 de 7 já chutaram.”**
-
-Sem mostrar números dos outros.
-
-## Revelação solo
-
-Essa tela decide se o jogo é gostoso ou é só trivia com maquiagem.
-
-Sequência:
-
-1. seu marcador aparece na régua;
+1. marcador do jogador entra;
 2. escala se estabelece;
-3. resposta correta entra;
+3. resposta correta aparece;
 4. distância fica óbvia;
-5. pontos aparecem;
-6. curiosidade curta entra por último.
+5. pontos entram;
+6. curiosidade curta fecha o momento.
 
-Elementos:
+Mostrar:
 
-- resposta correta grande;
+- resposta correta;
 - seu palpite;
 - erro percentual;
 - pontos;
-- classificação da rodada;
-- régua/target visual.
+- régua/target;
+- posição quando multiplayer;
+- curiosidade.
 
-Exemplos de feedback:
+Feedbacks possíveis:
 
-**“Quase, porra.”**
+- “Porra. Quase.”
+- “Isso foi assustadoramente perto.”
+- “Você foi parar em outro planeta.”
+- “CRAVOU!”
 
-**“Isso foi assustadoramente perto.”**
+## 12. Acerto exato
 
-**“Você foi parar em outro planeta.”**
+O estado visual canônico do acerto exato não usa mais o working title antigo.
 
-**“NA MOSCA!”**
+Direção atual:
 
-## Régua de comparação
+**CRAVOU!**
 
-Não precisa ser matematicamente linear quando valores extremos tornarem todo mundo ilegível. A visualização pode ajustar escala, desde que não minta sobre ordem e proximidade.
-
-Marcadores:
-
-- jogador;
-- resposta correta;
-- outros jogadores no multiplayer.
-
-Cada marcador precisa ter forma/identificação além da cor.
-
-## Na Mosca
-
-Acerto exato merece momento próprio.
-
-- marcador encaixa no centro;
+- marcador encaixa;
 - anel pulsa;
-- **NA MOSCA!** enorme;
-- +1.000 destacado;
-- animação curta;
-- CTA de compartilhar pode aparecer com mais força.
+- texto entra forte;
+- +1.000 aparece;
+- celebração curta.
 
-Sem fogos por dez segundos. A pessoa quer a próxima pergunta.
+## 13. Resultado final solo
 
-## Revelação multiplayer
-
-Ordem sugerida:
-
-1. régua vazia;
-2. palpites aparecem;
-3. nomes ficam visíveis;
-4. resposta correta entra;
-5. pontos aparecem;
-6. vencedor da rodada ganha destaque.
-
-A diversão é enxergar imediatamente que alguém quase acertou e outro chutou a população de Saturno.
-
-## Ranking parcial
-
-Curto.
-
-Mostrar top e posição de todos, mas sem transformar isso em tabela de BI.
-
-Cada linha:
-
-- posição;
-- apelido;
-- pontos totais;
-- variação pequena de posição.
-
-Fica poucos segundos ou avança por CTA.
-
-## Resultado final solo
-
-Mostrar:
+Mostrar só o que conta uma história:
 
 - pontos totais;
 - classificação divertida;
-- quantidade de respostas muito próximas;
-- quantidade de Na Mosca;
+- melhores aproximações;
+- acertos exatos;
 - melhor resposta;
-- maior desastre;
-- recorde pessoal se existir localmente.
+- maior desastre.
 
 CTAs:
 
-**Jogar de novo**
+- **Jogar de novo**
+- **Compartilhar**
 
-**Compartilhar**
+## 14. Multiplayer
 
-## Resultado final multiplayer
+Depois do solo aprovado, prototipar:
 
-Campeão em destaque.
+**Home → Criar/Entrar → Sala → Configurar → Pergunta → Espera → Revelação → Ranking → Próxima → Resultado → Revanche.**
 
-Depois ranking curto.
+Sala precisa mostrar código, compartilhar, jogadores e configurações sem parecer painel administrativo.
 
-Estatísticas engraçadas:
+## 15. Compartilhamento
 
-- mais preciso;
-- maior Na Mosca;
-- maior desastre;
-- mais consistente.
+Criar pelo menos três peças:
 
-CTAs:
+### Quase
 
-**Revanche**
-
-**Compartilhar**
-
-## Criar sala
-
-Configuração curta.
-
-Escolhas:
-
-- 5 ou 10 perguntas;
-- categorias;
-- 10, 20 ou 30 segundos.
-
-Não abrir um formulário de configuração de servidor de Minecraft.
-
-CTA:
-
-**Criar sala**
-
-## Sala de espera
-
-Mostrar:
-
-- código;
-- copiar;
-- compartilhar;
-- jogadores;
-- dono;
-- configurações resumidas;
-- CTA **Começar** para o dono.
-
-## Cards compartilháveis
-
-Criar pelo menos três modelos:
-
-### Quase acerto
-
-**“A resposta era 38. Eu chutei 39.”**
+> “A resposta era 38. Eu chutei 39.”
 
 ### Desastre
 
-**“A resposta era 42 mil. O Pedro chutou 8 milhões.”**
+> “A resposta era 42 mil. O Pedro chutou 8 milhões.”
 
-### Desafio
+### Convite
 
-**“Errei por 0,8%. Você chega mais perto?”**
+> “Errei por 0,8%. Chuta essa.”
 
-A pergunta precisa aparecer resumida quando fizer sentido.
+A peça precisa funcionar sozinha no WhatsApp/redes.
 
-Marca pequena e link claro.
+## 16. Estados obrigatórios
 
-## Estados que não podem ser esquecidos
-
+- número inválido;
+- tempo acabou;
+- pergunta indisponível;
 - sala inexistente;
 - sala cheia;
-- apelido repetido;
-- número inválido;
-- valor fora do limite;
-- tempo acabou;
-- jogador não respondeu;
 - jogador caiu;
 - jogador voltou;
-- dono mudou;
+- host mudou;
 - empate;
-- pergunta indisponível/erro de carregamento.
+- sem resposta.
 
 Mensagens curtas e humanas.
 
-Exemplo:
-
-**“Esse número não cabe nem no universo dessa pergunta.”**
-
-## Componentes reaproveitáveis
-
-- botão principal;
-- botão secundário;
-- campo numérico gigante;
-- unidade;
-- cronômetro;
-- badge de categoria;
-- avatar/marcador;
-- régua de revelação;
-- item de ranking;
-- toast;
-- modal curto;
-- indicador de progresso da partida.
-
-## Movimento obrigatório no protótipo
+## 17. Movimento obrigatório no protótipo
 
 Simular:
 
-- número crescendo/digitando;
-- confirmação do palpite;
-- régua entrando;
-- marcadores aparecendo;
-- resposta correta chegando;
-- Na Mosca;
+- digitação do número;
+- travamento do palpite;
+- entrada da régua;
+- chegada dos marcadores;
+- resposta correta;
+- estado `CRAVOU!`;
 - transição para próxima pergunta.
 
-É aqui que o protótipo deixa de ser um monte de screenshots e começa a provar o jogo.
-
-## O que NÃO desenhar agora
+## 18. O que não desenhar agora
 
 - loja;
 - assinatura;
-- ranking global completo;
 - perfil social;
 - clãs;
 - feed;
 - chat;
-- poderes;
 - moedas;
 - skins;
-- dezenas de modos;
-- painel administrativo;
-- tela explicando algoritmo de pontuação.
+- poderes;
+- ranking mundial complexo;
+- painel administrativo.
 
-A pessoa chuta um número. Não precisa fazer MBA para jogar.
+## 19. Multiplataforma
 
-## Critério de aprovação
+O mesmo design precisa servir à base única que será entregue como:
 
-O protótipo está pronto quando uma pessoa consegue, sem ajuda:
+- Web/PWA;
+- Android;
+- iOS.
 
-1. começar uma partida solo;
-2. entender a pergunta e unidade;
-3. mandar um palpite;
+Não criar três interfaces independentes. Adaptar safe areas, teclado, compartilhamento e comportamento nativo quando necessário.
+
+## 20. Critério de aprovação
+
+Uma pessoa que nunca viu o projeto consegue:
+
+1. começar;
+2. entender a pergunta;
+3. chutar;
 4. entender a revelação;
-5. saber quantos pontos ganhou;
-6. querer responder outra;
-7. criar/entrar numa sala;
-8. entender quem ganhou no multiplayer;
-9. compartilhar um resultado.
+5. entender os pontos;
+6. querer outra;
+7. compartilhar.
 
-E tem um teste mais importante que todos:
+E o teste principal:
 
-se a revelação não der vontade de olhar por mais dois segundos e pensar **“caralho”**, ainda não acertamos a principal tela do Na Mosca.
+> se a revelação não der aquele “caralho, eu quase acertei”, ainda não acertamos o **Chuta Essa!**.
