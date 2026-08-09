@@ -2,6 +2,16 @@
 
 Protótipo visual aprovado em 2026-08-09 para orientar a implementação do **Chuta Essa!**.
 
+## Arquivos visuais
+
+As telas aprovadas estão em:
+
+`docs/design/prototipos/chuta-essa-v1/telas/`
+
+Há **um HTML estático por tela**, de `01-splash-loading.html` até `14-resultado-da-sala.html`. Esses arquivos usam os tokens e estilos do Design System versionado em `docs/design/design-system/` e são a referência visual que o Antigravity deve abrir e comparar durante implementação e QA.
+
+Os `.md` desta pasta não substituem os HTMLs: eles registram precedência, jornada, regra de uso e handoff. O HTML registra a composição visual aprovada.
+
 ## Autoridade e precedência
 
 Este pacote define **jornada, composição, hierarquia e estados de tela**.
@@ -10,7 +20,7 @@ As fontes continuam separadas de propósito:
 
 1. `docs/documentacao-funcional.md` manda na **regra do jogo**;
 2. `docs/design/design-system/` manda em **tokens, componentes, tipografia, motion e assets**;
-3. este protótipo manda na **composição e sequência visual aprovada**;
+3. os HTMLs em `telas/` mandam na **composição e sequência visual aprovada**;
 4. `docs/regras-design-e-copy.md` continua sendo gate anti-IA.
 
 Se o protótipo divergir da regra funcional, a regra funcional vence. Se uma implementação visual ignorar o Design System sem justificativa, o Design System vence.
@@ -85,9 +95,9 @@ A sala continua sem login obrigatório, com código/link, apelido e palpites sec
 
 ## Como o Antigravity deve usar isto
 
-- Giam usa este pacote para definir o estado/tela e a composição da entrega.
+- Giam abre primeiro o HTML da tela/estado aplicável em `telas/` e usa o handoff para entender a intenção.
 - Guinho implementa usando `docs/design/design-system/`, sem redesenhar a interface por conta própria.
-- Marcelinho compara a entrega com este handoff, com o Design System e com a documentação funcional.
+- Marcelinho compara a entrega com o HTML aprovado, com o Design System e com a documentação funcional.
 - Nenhuma tela deste pacote abre escopo sozinha. Se estiver marcada como futuro/suporte, não entra numa fatia MVP só porque existe desenho.
 
 Leia também `HANDOFF.md` nesta pasta para a especificação tela a tela.
