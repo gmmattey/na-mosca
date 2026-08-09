@@ -1,6 +1,6 @@
 ---
 name: desenharInterface
-description: Transforma UX e Design System aprovado em especificacao visual fiel e implementavel no Chuta Essa!.
+description: Transforma UX, Design System e protótipo aprovado em especificação visual fiel e implementável no Chuta Essa!.
 ---
 
 # desenharInterface
@@ -10,14 +10,17 @@ Procedimento do **Giam** para UI.
 ## Antes de desenhar
 
 1. Leia `docs/jornada-ux-ui.md`, `docs/regras-design-e-copy.md` e `docs/brief-prototipo.md`.
-2. Se `docs/design/design-system/` existir, execute a skill `usarDesignSystemChutaEssa` e leia primeiro `README.md`, tokens, guidelines, componentes e o UI kit aplicável.
-3. Use `docs/identidade-visual.md` como contexto de origem, não para sobrescrever um Design System aprovado.
+2. Execute `usarDesignSystemChutaEssa` e leia o Design System aplicável.
+3. Se a tela estiver coberta por `docs/design/prototipos/chuta-essa-v1/`, execute `usarPrototipoChutaEssa` e leia `README.md` + `HANDOFF.md`.
+4. Use `docs/identidade-visual.md` como contexto de origem, não para sobrescrever Design System ou protótipo aprovados.
 
 ## Regra principal
 
-**Giam não redesenha o Design System. Ele o aplica.**
+**Giam não redesenha o que já foi aprovado. Ele aplica e completa apenas as lacunas reais.**
 
-Só crie decisão visual nova quando o sistema realmente não cobrir o caso. A decisão deve ser pequena, reversível e coerente com os tokens e padrões existentes.
+O Design System define linguagem visual e componentes. O protótipo aprovado define composição, sequência e estados da jornada. A documentação funcional continua mandando na regra do jogo.
+
+Só crie decisão visual nova quando as fontes realmente não cobrirem o caso. A decisão deve ser pequena, reversível e coerente com os padrões existentes.
 
 Antes de pedir componente novo ao Guinho, confirme que nenhum componente existente resolve a necessidade por composição ou variante.
 
@@ -25,6 +28,7 @@ Antes de pedir componente novo ao Guinho, confirme que nenhum componente existen
 
 Somente o necessário para o Guinho implementar:
 
+- tela/estado do handoff que está sendo construído;
 - hierarquia;
 - componente/variante existente a reutilizar;
 - token de cor/tipo/espaçamento/efeito;
@@ -34,7 +38,7 @@ Somente o necessário para o Guinho implementar:
 - acessibilidade;
 - safe areas;
 - comportamento responsivo;
-- exceção justificada quando o Design System não cobrir o caso.
+- exceção justificada quando as fontes não cobrirem o caso.
 
 ## Regras duras do Chuta Essa!
 
@@ -47,7 +51,9 @@ Somente o necessário para o Guinho implementar:
 - movimento curto e funcional;
 - cor nunca é o único sinal de proximidade;
 - CTA principal precisa funcionar bem no polegar em tela pequena;
-- nenhuma UI nova pode contrariar regra do jogo para obedecer estética.
+- nenhuma UI nova pode contrariar regra do jogo para obedecer estética;
+- anúncio nunca entra entre palpite e revelação;
+- tela marcada como suporte/futuro no protótipo não entra automaticamente na fatia MVP.
 
 ## Gate anti-freestyle
 
@@ -55,6 +61,7 @@ Se a proposta:
 
 - recria `Button`, `GuessInput`, `Timer`, `ProximityScale`, `ProximityBadge`, `ScoreCounter`, `RoomCodeCard`, `RankRow` ou `ShareCard` sem necessidade real;
 - ignora token e usa valor solto por conveniência;
+- muda a composição de uma tela aprovada sem motivo funcional;
 - parece template genérico de IA;
 - adiciona decoração sem função de jogo;
 
@@ -62,10 +69,12 @@ ela volta antes de implementação.
 
 ## Conflitos
 
-Regra funcional vence design.
+Regra funcional vence protótipo e design.
 
-Quando houver conflito entre documentos visuais antigos e Design System aprovado, o Design System vence no que diz respeito a token, componente, medida, tipografia, motion e padrão visual.
+Design System vence documentos visuais antigos no que diz respeito a token, componente, medida, tipografia, motion e padrão visual.
 
-Se o próprio Design System se contradizer em algo material de branding, não escolha escondido: Giam aponta a contradição e resolve com o primo quando a decisão mudar identidade pública.
+Protótipo aprovado vence improviso de composição e sequência quando não houver conflito funcional.
+
+Se existir conflito material de branding ou produto entre fontes canônicas, Giam aponta a contradição em vez de escolher escondido.
 
 Se o design poderia ser de qualquer SaaS trocando o logo, devolva e redesenhe.
