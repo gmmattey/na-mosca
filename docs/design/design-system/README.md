@@ -67,7 +67,7 @@ Agrupados por pasta em `components/`:
 
 ## UI kit
 
-`ui_kits/chuta-essa/` — protótipo clicável da jornada solo completa: Home → Pergunta → Palpite → Confirmação → Revelação (CRAVOU!) → Resultado, mais uma tela de Sala multiplayer. Conteúdo real do banco de perguntas.
+`ui_kits/chuta-essa/` — referência implementável da jornada solo: Home → Pergunta → Palpite → Revelação → Resultado, mais uma tela de Sala multiplayer. Conteúdo real do banco de perguntas. As telas são referência visual/estrutural; regra e estado continuam nas fontes funcionais do produto.
 
 ## Index
 
@@ -75,13 +75,13 @@ Agrupados por pasta em `components/`:
 - `tokens/colors.css`, `typography.css`, `spacing.css`, `effects.css`
 - `guidelines/*.card.html` — specimens de cor, tipo, espaçamento, movimento, marca, voz, anti-padrões (aba Design System)
 - `components/**` — primitivas React (ver acima)
-- `ui_kits/chuta-essa/` — protótipo de tela cheia
+- `ui_kits/chuta-essa/` — referência implementável das telas e da hierarquia da jornada
 - `SKILL.md` — versão portátil para Claude Code
 - `github.md` — associação com o repositório fonte
 
 ## Caveats
 
+- A importação no repositório preserva apenas fontes canônicas. Artefatos gerados pelo exportador (`_ds_bundle.js`, `_ds_manifest.json`, thumbnails e previews que dependem deles) não mandam no produto e podem ser regenerados quando necessário.
 - Sem Figma anexado e sem código de UI no repositório — tudo aqui foi inferido de documentação de produto em português, não de uma implementação existente.
 - Os assets em `assets/` são a marca canônica v1 deste Design System. Mudança futura exige revisão explícita de identidade; implementação não deve improvisar substitutos.
-- Sem sistema de ícones definido — telas usam texto ou formas geométricas simples no lugar de ícones.
 - Paleta, tipografia e regras de tom vêm diretamente dos docs; espaçamento, raios e sombras foram inferidos a partir das regras qualitativas (ex.: "cor nunca é único sinal", "sombra quase nunca") já que nenhum valor numérico de grid foi especificado no repo.
