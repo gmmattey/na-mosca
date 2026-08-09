@@ -1,6 +1,6 @@
 ---
 name: chuta-essa-design
-description: Use this skill to generate well-branded interfaces and assets for Chuta Essa! (jogo mobile-first de estimativa numérica, working title "Na Mosca"), either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, and UI kit components for prototyping.
+description: Use this skill to generate well-branded interfaces and assets for Chuta Essa!, jogo mobile-first de estimativa numérica, for production or prototypes. Contains essential design guidelines, colors, type, fonts, assets and UI kit components.
 user-invocable: true
 ---
 
