@@ -19,6 +19,7 @@ Ordem obrigatória:
 - `pensarComoJogo`
 - `desenharExperiencia`
 - `desenharInterface`
+- `usarDesignSystemChutaEssa`
 - `aplicarTomDoJogo`
 - `matarCheiroDeIA`
 - `arquitetarModulo`
@@ -27,6 +28,7 @@ Ordem obrigatória:
 
 ### Guinho
 - `criarComponenteUI`
+- `usarDesignSystemChutaEssa`
 - `garantirMultiplataforma`
 - `escreverTestes`
 - `registrarIssue`
@@ -35,8 +37,11 @@ Ordem obrigatória:
 ### Marcelinho
 - `validarModularidade`
 - `auditarSegurancaETestes`
+- `usarDesignSystemChutaEssa`
 - `matarCheiroDeIA`
 - `aplicarTomDoJogo`
 - `executarGOAS`
 
 Skill é procedimento, não fonte de regra do jogo. Se skill e documentação funcional divergirem, a documentação canônica vence.
+
+Para qualquer demanda visual, `usarDesignSystemChutaEssa` é obrigatória: Giam aplica, Guinho reutiliza e Marcelinho confere.
