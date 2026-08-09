@@ -3,7 +3,12 @@ const {ProximityBadge,ProximityScale,ScoreCounter,Button}=window.ChutaEssaDesign
 const g=Number(guess||0); const a=question.answer;
 const err=a?Math.abs(g-a)/a:1;
 let state='longe',points=50;
-if(g===a){state='cravou';points=1000;} else if(err<=0.01){state='muito_perto';points=900;} else if(err<=0.1){state='muito_perto';points=600;} else if(err<=0.25){state='razoavel';points=400;}
+if(g===a){state='cravou';points=1000;}
+else if(err<=0.01){state='muito_perto';points=900;}
+else if(err<=0.05){state='muito_perto';points=750;}
+else if(err<=0.10){state='muito_perto';points=600;}
+else if(err<=0.25){state='razoavel';points=400;}
+else if(err<=0.50){state='longe';points=200;}
 const guessPct=Math.max(6,Math.min(94,50+(g-a)/Math.max(a,1)*40));
 const answerPct=50;
 return (<div style={{height:'100%',background:'var(--bg-dark)',display:'flex',flexDirection:'column',justifyContent:'space-between',padding:'48px 28px 40px'}}>
