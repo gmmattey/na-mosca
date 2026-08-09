@@ -1,678 +1,248 @@
-# Na Mosca — jornada e UX/UI
+# Chuta Essa! — jornada e UX/UI
 
-> O jogo é sobre um chute, uma revelação e aquela sensação de “caralho, eu quase acertei”. A interface tem que servir isso rápido e bonito. Se parecer prova, planilha ou dashboard, cagamos na ideia.
+> O jogo é um chute, uma revelação e aquela sensação de “caralho, eu quase acertei”. A interface existe para servir isso rápido e bonito.
 
-## 1. A ideia visual em uma frase
+## 1. Ideia visual em uma frase
 
 **Pergunta grande, número gigante, suspense curto e revelação gostosa.**
 
-Tudo gira em torno desse ciclo:
+## 2. Princípio de UX
 
-**leu → chutou → descobriu → comparou → quis outra.**
+A pessoa precisa passar pelo ciclo:
 
-## 2. O que a experiência precisa provocar
+**leu → chutou → travou → revelou → comparou → quis outra.**
 
-O jogador deve passar por:
+Quanto menos a UI atrapalhar esse ritmo, melhor.
 
-1. **essa eu acho que sei mais ou menos**;
-2. **vou mandar esse número aqui**;
-3. **puta merda, quase** ou **fui parar em outro planeta**;
-4. **quero ver a próxima**;
-5. **preciso mandar essa para alguém**.
+## 3. Home
 
-O jogo vive do “só mais uma”.
+Objetivo: começar rápido.
 
-## 3. Princípios de UX
+Prioridade:
 
-### Pergunta manda na tela
+1. **Jogar agora**;
+2. **Criar sala**;
+3. **Entrar em sala**.
 
-Nada compete visualmente com ela.
+Sem login obrigatório, tutorial longo ou três telas de onboarding.
 
-### O palpite precisa ser prazeroso
+A marca **Chuta Essa!** precisa aparecer com personalidade, mas a home não vira landing page de startup.
 
-O número digitado deve ficar grande e claro. A unidade nunca pode ficar escondida.
+## 4. Pergunta
 
-### A revelação vale mais que a resposta
+A pergunta domina.
 
-Mostrar “78.838” sozinho é brochante.
+Hierarquia:
 
-Precisamos mostrar:
+1. categoria discreta;
+2. pergunta;
+3. palpite gigante;
+4. unidade;
+5. cronômetro;
+6. CTA **Chutar**.
 
-- onde você chutou;
-- onde estava a resposta;
-- quão perto ficou;
-- quem chegou mais perto;
-- uma curiosidade curta.
+Nada de card dentro de card.
 
-### Sem cara de quiz escolar
+## 5. Palpite
 
-Não usar estética de prova, checkbox de apostila nem “resposta correta/incorreta” como centro da experiência.
-
-Aqui quase sempre existe **proximidade**, não apenas certo ou errado.
-
-### Um objetivo por tela
-
-Pergunta. Palpite. Revelação. Ranking. Próxima.
-
-Só isso já segura o jogo.
-
-## 4. Estrutura geral
-
-### Fora da partida
-
-- Home
-- Partida rápida
-- Criar sala
-- Entrar em sala
-- Como jogar
-
-### Durante partida
-
-Fluxo linear, sem menu fixo enchendo o saco.
-
-### Solo
-
-**Home → Jogar agora → Pergunta → Palpite → Revelação → Pontos → Próxima → Resultado final → Jogar de novo/Compartilhar.**
-
-### Multiplayer
-
-**Home → Criar/Entrar → Sala → Pergunta → Palpites → Revelação → Ranking → Próxima → Placar final → Revanche.**
-
-## 5. Tela 1 — Home
-
-### Objetivo
-
-Colocar o jogador numa pergunta o mais rápido possível.
-
-### Estrutura
-
-Marca no topo.
-
-Centro:
-
-- frase curta;
-- CTA principal **Jogar agora**;
-- CTA secundário **Jogar com amigos**.
-
-Abaixo:
-
-- **Entrar em sala**;
-- **Como joga?**.
-
-### Copy sugerida
-
-**Você não precisa saber. Só precisa chegar perto.**
-
-“Chuta um número. Descobre o estrago.”
-
-### O que não entra
-
-- feed na home;
-- login obrigatório;
-- ranking mundial gigante;
-- catálogo com 30 modos bloqueando o jogo;
-- banner publicitário antes da primeira pergunta.
-
-## 6. Tela 2 — Como jogar
-
-Três passos, sem palestra:
-
-1. leia a pergunta;
-2. chute um número;
-3. quanto mais perto, mais pontos.
-
-Fechar com:
-
-**Pronto. Não tem pegadinha. Vai chutar.**
-
-CTA: **Jogar agora**.
-
-## 7. Tela 3 — Preparação da partida solo
-
-Idealmente nem existe como tela separada.
-
-Ao tocar **Jogar agora**, a primeira pergunta já entra.
-
-Pode haver uma transição curtíssima:
-
-**10 perguntas. 10 chutes. Bora.**
-
-Nada de pedir categoria, dificuldade, avatar, signo e tipo sanguíneo antes de jogar.
-
-## 8. Tela 4 — Pergunta / Palpite
-
-Essa é a tela principal do produto.
-
-### Hierarquia
-
-Topo discreto:
-
-- pergunta 3 de 10;
-- pontuação atual;
-- cronômetro.
-
-Centro:
-
-- categoria pequena;
-- pergunta em destaque;
-- campo numérico grande;
-- unidade sempre visível.
-
-Rodapé:
-
-- CTA **Mandar palpite**.
-
-### Exemplo
-
-**Mundo · 3/10**
-
-# Quantos quilômetros tem a Muralha da China?
-
-**[ 8.000 ] km**
-
-**Mandar palpite**
-
-### Campo numérico
+O campo numérico precisa parecer parte do jogo, não formulário.
 
 - teclado numérico;
-- aceitar separador de milhar;
-- decimal quando a pergunta permitir;
-- formatar número enquanto digita sem mudar o valor;
-- botão deve ficar óbvio quando a resposta está válida.
+- separadores legíveis;
+- valor cresce visualmente;
+- unidade sempre presente;
+- CTA próximo do polegar.
 
-## 9. Cronômetro
+## 6. Palpite travado
 
-No solo, 20 segundos padrão.
+Depois do envio:
 
-Nos últimos 5 segundos, a urgência aumenta visualmente de forma discreta.
-
-Não precisa tocar sirene de ataque aéreo.
-
-Em acessibilidade/redução de movimento, usar mudança textual clara.
-
-Quando termina sem resposta:
-
-**Tempo. Essa passou voando.**
-
-0 ponto e segue a vida.
-
-## 10. Depois de enviar
-
-O palpite é travado.
-
-Mostrar por um instante:
-
-**Você foi de 8.000 km.**
-
-No solo, pode seguir para revelação quase imediatamente.
+> **Agora já foi.**
 
 No multiplayer:
 
-**Palpite enviado. 5 de 7 já chutaram.**
+> **5 de 7 já chutaram.**
 
-Nunca mostrar os números dos outros antes da revelação.
+Não revelar palpite de ninguém antes da hora.
 
-## 11. Tela 5 — Revelação
+## 7. Revelação
 
-Essa é a tela que precisa ser mais gostosa do jogo inteiro.
+É o principal momento visual.
 
-### Sequência ideal
+Sequência:
 
-1. seu palpite aparece;
-2. entra uma régua/linha visual;
-3. resposta correta é revelada;
-4. distância entre os dois fica visível;
-5. pontos entram;
-6. curiosidade aparece.
+1. marcador do jogador;
+2. escala/régua;
+3. resposta correta;
+4. distância;
+5. pontos;
+6. curiosidade.
 
-### Exemplo
+No multiplayer, palpites dos jogadores aparecem antes da resposta correta.
 
-**Seu chute:** 8.000 km
+## 8. Estados de proximidade
 
-**Resposta:** 21.196 km
+Não usar “certo/errado” como prova escolar.
 
-**Erro:** 62,3%
+Estados visuais:
 
-**+50 pontos**
+- **CRAVOU!** — acerto exato;
+- muito perto;
+- razoável;
+- foi longe.
 
-“Sim, é muito maior do que parece no mapa.”
+Cor nunca é a única indicação.
 
-### Tom
+## 9. Ranking parcial
 
-A copy reage ao desempenho:
-
-#### Na Mosca
-
-**NA MOSCA!**
-
-“Acertou exatamente. Pode ficar insuportável por alguns minutos.”
-
-#### Muito perto
-
-**Porra, quase.**
-
-#### Razoável
-
-**Foi um chute digno.**
-
-#### Muito longe
-
-**Você mandou o palpite para outro CEP.**
-
-Não humilhar gratuitamente nem repetir a mesma piada em toda rodada.
-
-## 12. A régua visual
-
-É o principal elemento gráfico da revelação.
-
-Ela mostra:
-
-- palpite(s);
-- resposta correta;
-- distância relativa.
-
-No multiplayer, cada pessoa ocupa uma marca com nome/apelido.
-
-### Cuidado importante
-
-Quando existe diferença absurda de escala, uma régua linear pode jogar quase todo mundo no mesmo pixel.
-
-A implementação visual pode usar escala adaptativa ou transformação que preserve leitura, mas precisa deixar claro que é uma representação comparativa, não uma régua científica exata.
-
-Nada de fazer o usuário interpretar gráfico de mercado financeiro no meio do jogo.
-
-## 13. Tela 6 — Pontuação da rodada
-
-No solo, pode ser integrada à revelação.
+Curto e legível.
 
 Mostrar:
 
-- pontos ganhos;
-- total acumulado;
-- classificação rápida de proximidade.
+- posição;
+- apelido;
+- pontos;
+- pequena variação de posição quando útil.
 
-CTA principal:
+Nada de tabela com 15 colunas.
 
-**Próxima**.
+## 10. Resultado solo
 
-A ação deve ficar alcançável com o polegar.
+Mostrar história da partida:
 
-## 14. Tela 7 — Criar sala
+- total;
+- classificação;
+- melhores aproximações;
+- acertos exatos;
+- maior desastre;
+- CTA **Jogar de novo**;
+- CTA **Compartilhar**.
 
-### Objetivo
+## 11. Sala multiplayer
 
-Criar uma partida social em segundos.
+Criar/entrar precisa ser simples.
 
-Opções:
-
-- 5 ou 10 perguntas;
-- categorias;
-- tempo: 10 / 20 / 30 segundos.
-
-Defaults já selecionados.
-
-CTA:
-
-**Criar sala**.
-
-## 15. Tela 8 — Entrar em sala
-
-Campos:
-
-- código;
-- apelido.
-
-Por link, código já resolvido.
-
-CTA:
-
-**Entrar**.
-
-Erros:
-
-- “Essa sala já acabou.”
-- “Código não bateu. Confere aí.”
-- “A sala está cheia.”
-
-## 16. Tela 9 — Sala de espera
-
-Host:
+Sala mostra:
 
 - código;
 - compartilhar;
-- jogadores conectados;
-- resumo das regras;
-- CTA **Começar**.
-
-Convidados:
-
 - jogadores;
-- “Esperando começar”.
+- host;
+- configurações resumidas;
+- CTA **Começar** para host.
 
-Nada de exigir conta.
+## 12. Configuração
 
-## 17. Tela 10 — Pergunta multiplayer
+Só o essencial:
 
-Mesma base do solo.
+- 5 ou 10 perguntas;
+- categorias;
+- 10/20/30 segundos.
 
-Diferenças:
+Não criar painel de servidor de Minecraft.
 
-- todos recebem a mesma pergunta;
-- progresso de respostas pode aparecer depois do envio;
-- nenhum palpite de outro jogador é revelado antes do fim.
+## 13. Resultado multiplayer
 
-Isso permite reaproveitar estrutura de tela e evita construir dois produtos separados.
+Campeão em destaque + ranking curto.
 
-## 18. Tela 11 — Revelação multiplayer
+Destaques possíveis:
 
-Aqui o jogo cresce.
-
-Todos os palpites entram visualmente na régua.
-
-A resposta correta aparece depois.
-
-Destaques:
-
-- mais perto;
-- Na Mosca, se houver;
-- maior viagem da rodada;
-- pontos de cada um.
-
-### Exemplo
-
-**Resposta: 78.838**
-
-Ana — 80.000 — **quase beijou a mosca**
-
-Luiz — 120.000
-
-Pedro — 1.000.000 — **foi buscar a resposta em outro planeta**
-
-A brincadeira precisa continuar legível mesmo com 10 jogadores.
-
-## 19. Tela 12 — Ranking entre rodadas
-
-Curta e direta.
-
-Mostrar top 3 + posição dos demais.
-
-CTA/avanço:
-
-**Próxima pergunta**.
-
-Pode avançar automaticamente depois de poucos segundos no multiplayer, com host tendo controle quando necessário.
-
-Não deixar ranking ficar 20 segundos parado enquanto todo mundo quer jogar.
-
-## 20. Tela 13 — Resultado final solo
-
-Precisa dar vontade de compartilhar.
-
-Mostrar:
-
-- pontuação total;
-- classificação divertida;
-- melhor resposta;
-- pior desastre;
-- média de erro;
-- quantidade de Na Mosca.
-
-Exemplo:
-
-# 7.250 pontos
-
-**Perigosamente bom.**
-
-“Seu melhor chute errou por 0,8%. O pior a gente prefere não comentar.”
-
-CTAs:
-
-- **Jogar de novo**;
-- **Compartilhar**.
-
-## 21. Tela 14 — Resultado final multiplayer
-
-Mostrar:
-
-- campeão;
-- ranking completo;
-- quantidade de Na Mosca;
 - mais preciso;
+- mais acertos exatos;
 - maior desastre;
-- estatística engraçada da partida.
+- mais consistente.
 
 CTAs:
 
 - **Revanche**;
-- **Compartilhar resultado**;
-- **Sair**.
+- **Compartilhar**.
 
-### Copy possível
+## 14. Compartilhamento
 
-**Ana levou essa. Pedro errou 14 milhões numa pergunta e também merece reconhecimento.**
+Peça precisa funcionar sem contexto.
 
-## 22. Compartilhamento
+Exemplos:
 
-O card precisa fazer sentido sem contexto.
+> “A resposta era 38. Eu chutei 39.”
 
-### Solo
+> “Errei por 0,8%. Chuta essa.”
 
-- pontuação;
-- pergunta ou estatística marcante;
-- CTA/link para tentar.
+> “A resposta era 42 mil. O Pedro chutou 8 milhões.”
 
-### Multiplayer
+## 15. Copy
 
-- campeão;
-- frase engraçada;
-- link para nova partida/desafio.
+Curta e falada.
 
-Exemplo:
+Evitar texto explicando o óbvio ou linguagem de IA/marketing.
 
-**A resposta era 42 mil. Eu chutei 41.700. Você chega mais perto?**
+Direções:
 
-Esse compartilhamento é mais forte do que “venha conhecer nosso jogo inovador”.
-
-## 23. Desafio do Dia — direção futura
-
-Quando entrar, deve parecer extensão natural do modo solo.
-
-Home pode ganhar um bloco discreto:
-
-**Desafio de hoje**
-
-“5 perguntas iguais pra todo mundo.”
-
-Não precisa transformar a home num calendário de hábito com 14 selos e foguinhos.
-
-## 24. Estados de erro e conexão
-
-### Caiu no multiplayer
-
-**Sua internet deu uma tossida. Estamos te colocando de volta.**
-
-Se perder a rodada, volta na próxima.
-
-### Pergunta falhou
-
-O sistema pula a pergunta sem penalizar:
-
-**Essa pergunta deu ruim. Próxima.**
-
-### Sala morreu
-
-**Essa sala já acabou. Bora criar outra?**
-
-## 25. Direção visual
-
-### Personalidade
-
-Leve, afiada, contemporânea e com cara de jogo adulto/casual.
-
-Não infantilizar com troféu dourado em tudo. Não usar visual de cassino.
-
-### Layout
-
-- muito espaço vazio;
-- pergunta como elemento dominante;
-- número grande;
-- poucas superfícies;
-- quase nenhum card quando não precisa;
-- botões largos e claros.
-
-### Tipografia
-
-Números merecem tratamento especial.
-
-Uma fonte com algarismos bonitos, legíveis e estáveis ajuda muito.
-
-Títulos podem ter mais personalidade, mas perguntas precisam ser lidas sem esforço.
-
-### Cor
-
-A paleta deve permitir estados de proximidade sem depender exclusivamente de vermelho/verde.
-
-Precisamos de:
-
-- fundo;
-- superfície;
-- ação principal;
-- destaque “Na Mosca”;
-- estados de proximidade;
-- texto primário/secundário.
-
-## 26. Movimento
-
-Animação vale principalmente na revelação.
-
-Usar em:
-
-- régua aparecendo;
-- marcador de palpite;
-- resposta chegando;
-- pontos contando;
-- Na Mosca;
-- troca de posição no ranking.
-
-Não animar toda porra da interface só porque podemos.
-
-A pessoa deve conseguir jogar rápido mesmo depois da vigésima pergunta.
-
-## 27. Som e vibração
-
-Opcional.
-
-Pode usar:
-
-- feedback tátil ao confirmar palpite;
-- impacto curto em Na Mosca;
-- som discreto na revelação;
-- alerta leve nos segundos finais.
-
-Respeitar modo silencioso e preferência do usuário.
-
-## 28. Acessibilidade
-
-- contraste suficiente;
-- não depender só de cor;
-- teclado e leitores de tela no web;
-- tamanhos de toque confortáveis;
-- redução de movimento;
-- número e unidade lidos corretamente;
-- cronômetro textual;
-- formatação numérica compatível com localidade;
-- perguntas longas sem cortar conteúdo importante.
-
-## 29. Localização de números
-
-Isso aqui importa pra caralho num jogo numérico.
-
-No Brasil:
-
-- milhar: ponto;
-- decimal: vírgula.
-
-A interface precisa exibir números de acordo com a localidade, enquanto o sistema trabalha com valor numérico normalizado internamente.
-
-O jogador não pode perder uma rodada porque digitou `1.500,5` e o sistema resolveu ler outra coisa.
-
-## 30. Responsividade
-
-Mobile-first, retrato.
-
-Desktop deve centralizar o jogo numa área confortável.
-
-No multiplayer em tela grande, pode haver mais espaço para a régua e ranking, mas sem criar uma UX diferente que precise ser mantida separadamente.
-
-## 31. Tom de voz
-
-Curto, divertido e sem parecer locutor de programa infantil.
-
-### Bom
-
+- “Chuta essa.”
 - “Manda teu chute.”
-- “Porra, quase.”
-- “Foi parar longe.”
-- “Na Mosca.”
-- “Próxima.”
+- “Agora já foi.”
+- “Porra. Quase.”
+- “CRAVOU!”
+- “Mais uma?”
 
-### Ruim
+## 16. Anti-template
 
-- “Selecione sua estimativa numérica abaixo.”
-- “Parabéns por completar esta questão.”
-- “Você está progredindo na sua jornada de conhecimento.”
+Não usar como padrão:
 
-Ninguém pediu uma jornada. A pessoa pediu pra chutar um número.
+- cards em excesso;
+- bento grid;
+- glassmorphism;
+- glow;
+- degradê roxo/azul;
+- hero SaaS;
+- fonte genérica de produto de IA.
 
-## 32. Telas obrigatórias do MVP
+Ver `docs/regras-design-e-copy.md`.
 
-1. Home
-2. Como jogar
-3. Pergunta/palpite solo
-4. Revelação solo
-5. Resultado final solo
-6. Criar sala
-7. Entrar em sala
-8. Sala de espera
-9. Pergunta multiplayer
-10. Espera de jogadores
-11. Revelação multiplayer
-12. Ranking entre rodadas
-13. Resultado final multiplayer
-14. Estados de erro/reconexão
+## 17. Mobile e plataformas
 
-Várias delas devem compartilhar o mesmo esqueleto visual.
+Design nasce mobile-first, referência 390×844 e mínimo 360 px.
 
-## 33. Componentes reaproveitáveis
+Precisa considerar desde o começo:
 
-- botão primário;
-- botão secundário;
-- input numérico;
-- pergunta;
-- unidade;
-- cronômetro;
-- progresso da partida;
-- marcador de palpite;
-- régua de revelação;
-- ranking;
-- placar;
-- código de sala;
-- jogador/lista;
-- feedback curto/toast.
+- safe areas;
+- teclado;
+- back;
+- share nativo;
+- deep links;
+- Web/PWA;
+- Android;
+- iOS.
 
-## 34. O que o protótipo precisa provar
+Uma UI, adaptações de plataforma quando necessárias.
 
-Antes de código bonito, o protótipo deve mostrar que:
+## 18. Movimento
 
-- dá para chegar à primeira pergunta quase imediatamente;
-- a unidade nunca gera dúvida;
-- digitar números grandes é confortável;
-- a pessoa entende que não precisa saber a resposta exata;
-- a revelação faz sentido sem explicação;
-- comparar vários jogadores continua legível;
-- o botão de próxima não fica escondido;
-- o resultado final dá vontade de revanche ou compartilhamento.
+Movimento deve servir ao jogo:
 
-Se isso funcionar, temos um jogo.
+- número reagindo;
+- palpite travando;
+- régua entrando;
+- marcadores surgindo;
+- resposta chegando;
+- `CRAVOU!` com impacto curto.
 
-Se a gente precisar explicar a régua num tutorial de quatro telas, desenhamos a régua errado.
+Nada de animação só para parecer premium.
+
+## 19. Estados de erro
+
+Tratar sem modal gigante:
+
+- número inválido;
+- tempo acabou;
+- pergunta indisponível;
+- sala inexistente;
+- sala cheia;
+- jogador caiu;
+- jogador voltou;
+- host mudou.
+
+## 20. Critério final
+
+A jornada está boa quando uma pessoa entra sem ajuda, manda um chute em segundos, entende imediatamente o reveal e sente vontade de responder outra.
+
+Se parecer quiz escolar ou dashboard com cor verde, volta tudo.
