@@ -11,10 +11,11 @@ Quando o usuário executar `/goas <demanda>`, orquestre a entrega usando `.agent
 1. Ler `AGENTS.md` e as fontes canônicas relacionadas à demanda.
 2. Confirmar comportamento alvo, recorte e o que fica fora.
 3. Definir requisitos de aceite verificáveis.
-4. Se houver UI e `docs/design/design-system/` existir, executar `usarDesignSystemChutaEssa` e tratá-lo como fonte visual operacional principal: ler `README.md`, tokens, componentes, guidelines e UI kit aplicável antes de desenhar qualquer coisa.
-5. Se o Design System ainda não estiver importado, usar `docs/identidade-visual.md`, `docs/regras-design-e-copy.md`, `docs/jornada-ux-ui.md` e protótipo aprovado.
-6. Definir arquitetura e impactos Web/PWA, Android e iOS.
-7. Resolver sozinho decisões técnicas reversíveis já cobertas pelas fontes.
+4. Se houver UI, executar `usarDesignSystemChutaEssa` para linguagem visual e `usarPrototipoChutaEssa` para composição, sequência e estados aprovados.
+5. Ler `docs/design/prototipos/chuta-essa-v1/README.md` e `HANDOFF.md` antes de especificar uma tela já prototipada.
+6. Se não houver protótipo para o estado pedido, usar jornada, Design System e regras anti-IA sem inventar nova feature.
+7. Definir arquitetura e impactos Web/PWA, Android e iOS.
+8. Resolver sozinho decisões técnicas reversíveis já cobertas pelas fontes.
 
 **Parar somente** se faltar decisão real de produto ou existir condição de parada do `AGENTS.md`.
 
@@ -23,11 +24,12 @@ Quando o usuário executar `/goas <demanda>`, orquestre a entrega usando `.agent
 1. Sincronizar base limpa.
 2. Usar branch/worktree isolada quando estiver fazendo mudança real.
 3. Implementar uma fatia vertical completa.
-4. Se o Design System estiver no repo, reutilizar primeiro tokens, componentes e padrões existentes. Criar componente novo só quando não houver equivalente adequado.
-5. Manter regra fora da UI e adapters por canal.
-6. Não vazar resposta correta antes da revelação.
-7. Escrever/ajustar testes junto.
-8. Rodar validação disponível antes de entregar ao Marcelinho.
+4. Reutilizar tokens, componentes e padrões existentes do Design System.
+5. Respeitar a composição e sequência do protótipo aprovado quando a tela estiver coberta pelo handoff.
+6. Manter regra fora da UI e adapters por canal.
+7. Não vazar resposta correta antes da revelação.
+8. Escrever/ajustar testes junto.
+9. Rodar validação disponível antes de entregar ao Marcelinho.
 
 ## 3. Marcelinho — revisão adversarial
 
@@ -42,9 +44,12 @@ Checar:
 - regressões;
 - modularidade;
 - acessibilidade;
-- fidelidade ao protótipo e, quando presente, ao Design System canônico;
+- fidelidade ao Design System;
+- fidelidade à composição e sequência do protótipo aprovado;
 - uso correto de tokens/componentes existentes;
 - violações dos anti-patterns visuais/copy;
+- nenhuma tela futura/suporte entrou no MVP por acidente;
+- nenhum anúncio entrou entre palpite e revelação;
 - Web/PWA;
 - impacto Android/iOS/Capacitor.
 
@@ -64,7 +69,7 @@ Repetir até aprovação ou bloqueio real.
 
 ## 5. Giam — aceite
 
-Conferir os requisitos do plano um a um. Procurar feature não pedida, mock escondido, integração falsa, estado não verificado ou desvio visual do Design System.
+Conferir os requisitos do plano um a um. Procurar feature não pedida, mock escondido, integração falsa, estado não verificado, desvio visual do Design System ou desvio de jornada do protótipo aprovado.
 
 Saída: `ACEITO`, `ACEITO COM PENDÊNCIA REGISTRADA` ou `DEVOLVIDO`.
 
