@@ -10,7 +10,7 @@ Procedimento do **Giam** para UI.
 ## Antes de desenhar
 
 1. Leia `docs/jornada-ux-ui.md`, `docs/regras-design-e-copy.md` e `docs/brief-prototipo.md`.
-2. Se `docs/design/design-system/` existir, leia primeiro o `readme.md`, a `SKILL.md`, os tokens, guidelines, componentes e o UI kit aplicável.
+2. Se `docs/design/design-system/` existir, execute a skill `usarDesignSystemChutaEssa` e leia primeiro `README.md`, tokens, guidelines, componentes e o UI kit aplicável.
 3. Use `docs/identidade-visual.md` como contexto de origem, não para sobrescrever um Design System aprovado.
 
 ## Regra principal
