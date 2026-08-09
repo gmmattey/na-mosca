@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap');
+:root{
+--font-display:'Barlow Condensed','Arial Narrow',sans-serif;--font-body:'Barlow','Helvetica Neue',Arial,sans-serif;
+--text-guess:700 clamp(64px,22vw,160px)/0.95 var(--font-display);
+--text-display-1:700 clamp(40px,10vw,64px)/1.0 var(--font-display);
+--text-h1:700 clamp(32px,8vw,44px)/1.05 var(--font-display);
+--text-h2:600 26px/1.15 var(--font-display);
+--text-question:600 clamp(21px,5.5vw,28px)/1.28 var(--font-body);
+--text-body:400 16px/1.5 var(--font-body);
+--text-body-sm:400 14px/1.45 var(--font-body);
+--text-label:600 13px/1 var(--font-body);
+--text-button:600 16px/1 var(--font-body);
+--tracking-label:.08em;
+}

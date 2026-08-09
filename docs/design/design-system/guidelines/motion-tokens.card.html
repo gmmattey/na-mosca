@@ -1,0 +1,7 @@
+<!-- @dsCard group="Motion" viewport="700x150" name="Duracao & Easing" subtitle="Movimento curto e a servico do jogo, nunca decorativo" -->
+<link rel="stylesheet" href="../styles.css">
+<style>@keyframes dsdemo{0%{transform:translateX(0)}50%{transform:translateX(420px)}100%{transform:translateX(0)}}</style>
+<div style="height:150px;background:var(--bg-dark);display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 24px;font-family:var(--font-body)">
+<div style="position:relative;height:10px"><div style="position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent-primary);animation:dsdemo 2.4s var(--ease-out) infinite"></div></div>
+<div style="display:flex;gap:20px;color:var(--text-on-dark-muted);font:var(--text-body-sm)"><span>--dur-fast 120ms</span><span>--dur-base 200ms</span><span>--dur-slow 420ms</span><span>--ease-out</span></div>
+</div>
