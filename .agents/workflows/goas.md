@@ -11,7 +11,7 @@ Quando o usuário executar `/goas <demanda>`, orquestre a entrega usando `.agent
 1. Ler `AGENTS.md` e as fontes canônicas relacionadas à demanda.
 2. Confirmar comportamento alvo, recorte e o que fica fora.
 3. Definir requisitos de aceite verificáveis.
-4. Se houver UI e `docs/design/design-system/` existir, tratá-lo como fonte visual operacional principal: ler `readme.md`, tokens, componentes, guidelines, UI kit e a skill do próprio Design System antes de desenhar qualquer coisa.
+4. Se houver UI e `docs/design/design-system/` existir, executar `usarDesignSystemChutaEssa` e tratá-lo como fonte visual operacional principal: ler `README.md`, tokens, componentes, guidelines e UI kit aplicável antes de desenhar qualquer coisa.
 5. Se o Design System ainda não estiver importado, usar `docs/identidade-visual.md`, `docs/regras-design-e-copy.md`, `docs/jornada-ux-ui.md` e protótipo aprovado.
 6. Definir arquitetura e impactos Web/PWA, Android e iOS.
 7. Resolver sozinho decisões técnicas reversíveis já cobertas pelas fontes.
