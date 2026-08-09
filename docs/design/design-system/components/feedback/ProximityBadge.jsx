@@ -1,5 +1,5 @@
 import React from 'react';
-export function ProximityBadge({state='perto'}){
+export function ProximityBadge({state='razoavel'}){
 const map={
 cravou:{label:'CRAVOU!',color:'var(--proximity-exact)'},
 muito_perto:{label:'Muito perto',color:'var(--proximity-close)'},
